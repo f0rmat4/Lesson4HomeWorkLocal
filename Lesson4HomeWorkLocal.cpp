@@ -42,9 +42,9 @@ int main(int argc, const char* argv[]) {
 	
 	//Написать программу, выводящую на экран “истину”, если две целочисленные константы, объявленные в её начале либо равны десяти сами по себе, либо их сумма равна десяти
 	
-	int num1;
-	int num2;
-	cin >> num1 >> num2;
+	const int num1 = 10;
+	const int num2 = 5;
+	//cin >> num1 >> num2;
 	int sum = num1 + num2;
 	
 			do {
@@ -52,12 +52,12 @@ int main(int argc, const char* argv[]) {
 				cout << true << endl;
 				break;
 			}else
-					continue;
+					//continue;
 			if (num2 == 10) {
 				cout << true << endl;
 				break;
 			}else
-					continue;
+					//continue;
 			if (sum == 10) {
 				cout << true << endl;
 				break;
